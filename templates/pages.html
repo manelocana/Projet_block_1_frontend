@@ -1,98 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Frisk Agency</title>
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
 
-{% extends 'index.html' %}
+
+    
 
 
-{% block extra_css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/pages.css') }}">
-{% endblock %}
+<header>
+    <div class="container flex-column">
 
-
-{% block content %}
-
-    <section class="hero">
-        <img src="{{ url_for('static', filename='img/aboutme_camera.jpeg') }}" alt="contact image">
-        <div class="container">
-            <h1>About me</h1>
+        <p class="logo">
+            <a href="home.html">
+                <img src="../img/logo_web.jpeg" alt="logo_web">
+            </a>
+        </p>
+        
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="pages.html">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        
+        <div class="header-login">
+            <!-- Aquí simulamos usuario no autenticado -->
+            <a href="login.html">Login</a>
         </div>
-    </section>
+
+        <div class="search">
+            <a href="mailto:987frisk.agency@mail.com" class="btn">WORK WITH ME</a>
+        </div>
+       
+    </div>
+</header>
 
 
-    <section class="about">
+
+
+<main>
+
+<!-- Hero -->
+<section class="hero">
+    <img src="../img/aboutme_camera.jpeg" alt="about image">
+    <div class="container">
+        <h1>About Me</h1>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about">
     <div class="container flex-center">        
         <div class="about_content">
             <div class="about_image text-center">
-                <img src="{{ url_for('static', filename='img/pages_devweb.jpg') }}" alt="Professional Photographer">
+                <img src="../img/pages_devweb.jpg" alt="Professional Developer">
             </div>
 
             <div class="about_text text-center">
-                {% if about and about.content %}
-                    {{ about.content | safe }}
-                {% else %}
-                    <p>About empty</p>
-                {% endif %}
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce vel sapien elit. In malesuada semper mi, nec pulvinar neque.
+                </p>
 
-                {% if current_user.is_authenticated %}
-                    <a href="{{ url_for('pages.edit_about') }}" class="btn">
-                        {% if about and about.content %} Edit About {% else %} Add About {% endif %}
-                    </a>
-                {% endif %}
-
-                <br>
-                <a href="{{ url_for('portfolio.portfolio') }}" class="btn">View My Projects</a>
+                <!-- Botón simulado para proyectos -->
+                <a href="portfolio.html" class="btn">View My Projects</a>
             </div>
 
         </div>
     </div>
-    </section>
+</section>
 
-
-    <section class="cards">
-        <h2>WHAT WE CAN DO FOR OUR CLIENTS</h2>
-        <div class="container cards-2">
-            <div class="card card_desing">
-                <h3>Branding Desing</h3>
-                <p>branding desing</p>
-                <a href="{{ url_for('pages.branding') }}" class="btn">VIEW DETAILS</a>
-
-            </div>
-            <div class="card card_develope">
-                <h3>AlbumPhoto Developement</h3>
-                <p>Websitedevelopee</p>
-                <a href="{{ url_for('pages.branding') }}" class="btn">VIEW DETAILS</a>
-            </div>
-            <div class="card card_modelling">
-                <h3>Illustration Modelling</h3>
-                <p>modelo de ilustracion</p>
-                <a href="{{ url_for('pages.branding') }}" class="btn">VIEW DETAILS</a>
-            </div>
-            <div class="card card_marketing">
-                <h3>Digital Marketing</h3>
-                <p>digital marketing</p>
-                <a href="{{ url_for('pages.branding') }}" class="btn">VIEW DETAILS</a>
-            </div>
+<!-- Cards -->
+<section class="cards">
+    <h2>WHAT WE CAN DO FOR OUR CLIENTS</h2>
+    <div class="container cards-2">
+        <div class="card card_desing">
+            <h3>Branding Design</h3>
+            <p>branding design</p>
+            <a href="pages/projet_branding.html" class="btn">VIEW DETAILS</a>
         </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <img src="{{ url_for('static', filename='img/devs_hablando.jpeg') }}" alt="services">
-            <div class="container_del_container">
-                <h2>WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
-                <h3>Passionate About Creating Quality Desing</h3>
-                <p>We are a creative agency working with brands building insighful strategy, creating unique desings and crafting value</p>
-                <p class="services_list">
-                    branding<br>
-                    developpement<br>
-                    advertising<br>
-                    marketing
-                </p>
-            </div>
+        <div class="card card_develope">
+            <h3>AlbumPhoto Development</h3>
+            <p>Website development</p>
+            <a href="pages/projet_branding.html" class="btn">VIEW DETAILS</a>
         </div>
-    </section>
+        <div class="card card_modelling">
+            <h3>Illustration Modelling</h3>
+            <p>Model of illustration</p>
+            <a href="pages/projet_branding.html" class="btn">VIEW DETAILS</a>
+        </div>
+        <div class="card card_marketing">
+            <h3>Digital Marketing</h3>
+            <p>digital marketing</p>
+            <a href="pages/projet_branding.html" class="btn">VIEW DETAILS</a>
+        </div>
+    </div>
+</section>
 
+<!-- Services -->
+<section class="services">
+    <div class="container">
+        <img src="../img/devs_hablando.jpeg" alt="services">
+        <div class="container_del_container">
+            <h2>WE OFFER A WIDE RANGE OF BRAND SERVICES</h2>
+            <h3>Passionate About Creating Quality Design</h3>
+            <p>We are a creative agency working with brands building insightful strategy, creating unique designs and crafting value</p>
+            <p class="services_list">
+                branding<br>
+                development<br>
+                advertising<br>
+                marketing
+            </p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="container_left">
+            <h3>
+                Get valuable strategy, culture and brand insights straight to your inbox
+            </h3>
+
+            <h4>Contact</h4>
+            <address>
+                27 Division St, New York,<br>
+                NY 10002, Usa<br>
+                <br>
+                +1800123654987<br>
+                <a href="mailto:987frisk.agency@mail.com">987frisk.agency@mail.com</a>
+            </address>
+        </div>
+
+        <div class="container_right">
+            <h4>Links</h4>
+            <nav>
+                <a href="{{ url_for('pages.pages') }}">About</a>
+                <a href="{{ url_for('portfolio.portfolio') }}">Portfolio</a>
+                <a href="{{ url_for('pages.pages') }}">Services</a>
+                <a href="{{ url_for('blog.blog') }}">Testimonials</a>
+                <a href="{{ url_for('contact.contact') }}">Careers</a>
+            </nav>
+        </div> 
+
+    </div>
+
+    <small>
+        Copyright C 2026 - 
+        <a href="mailto:manelocana.dev@gmail.com">manelocana.dev@gmail.com</a>
+    </small>
     
+</footer>
 
-{% endblock %}
 
 
-    
+
+</body>
+</html>

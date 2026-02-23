@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-static - Frisk Agency</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/portfolio.css">
+
+</head>
+
+
+<body>
+
+
+
+<header>
+    <div class="container flex-column">
+
+        <p class="logo">
+            <a href="home.html">
+                <img src="../img/logo_web.jpeg" alt="logo_web">
+            </a>
+        </p>
+        
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="pages.html">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        
+        <div class="header-login">
+            <!-- Aquí simulamos usuario no autenticado -->
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="search">
+            <a href="mailto:987frisk.agency@mail.com" class="btn">WORK WITH ME</a>
+        </div>
+       
+    </div>
+</header>
+
+
+<main>
+
+    <section>
+        <div class="hero_portfolio">
+            <img src="../img/photo_devweb.jpg'" alt="photo_computer">
+            <div class="container">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="cards_portfolio">
+        <div class="container">
+
+            <div class="card_decentralized">
+                <a href="portfolio.projet_1">
+                    <img src="../img/photo_ordi.jpg" alt="Branding-design">
+                    <h3>Educational Platform</h3>
+                    <h4>Branding/ Developement/ Marketing</h4>
+                </a>
+            </div>
+
+            <div class="card_appbusiness">
+                <a href="portfolio.projet_1">
+                    <img src="../img/devs_hablando.jpeg" alt="devs_hablando">
+                    <h3>Educational Platform</h3>
+                    <h4>Branding/ Developement/ Marketing</h4>
+                </a>
+            </div>
+
+            <div class="card_website">
+                <a href="portfolio.projet_1">
+                    <img src="../img/digital_marketing.jpeg" alt="digital_marketing">
+                    <h3>Educational Platform</h3>
+                    <h4>Branding/ Developement/ Marketing</h4>
+                </a>
+            </div>
+
+            <div class="card_novascotia">
+                <a href="portfolio.projet_1">
+                    <img src="../img/illustration_modeling.jpeg" alt="illustration_modeling">
+                    <h3>Educational Platform</h3>
+                    <h4>Branding/ Developement/ Marketing</h4>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    
+</main>
+
+
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="container_left">
+            <h3>
+                Get valuable strategy, culture and brand insights straight to your inbox
+            </h3>
+
+            <h4>Contact</h4>
+            <address>
+                27 Division St, New York,<br>
+                NY 10002, Usa<br>
+                <br>
+                +1800123654987<br>
+                <a href="mailto:987frisk.agency@mail.com">987frisk.agency@mail.com</a>
+            </address>
+        </div>
+
+        <div class="container_right">
+            <h4>Links</h4>
+            <nav>
+                <a href="{{ url_for('pages.pages') }}">About</a>
+                <a href="{{ url_for('portfolio.portfolio') }}">Portfolio</a>
+                <a href="{{ url_for('pages.pages') }}">Services</a>
+                <a href="{{ url_for('blog.blog') }}">Testimonials</a>
+                <a href="{{ url_for('contact.contact') }}">Careers</a>
+            </nav>
+        </div> 
+
+    </div>
+
+    <small>
+        Copyright C 2026 - 
+        <a href="mailto:manelocana.dev@gmail.com">manelocana.dev@gmail.com</a>
+    </small>
+    
+</footer>
+
+
+
+
+
+
+</body>
+</html>

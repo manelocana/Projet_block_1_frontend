@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Frisk Agency</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">       <!-- global -->
+    <link rel="stylesheet" href="../css/portfolio.css">  <!-- específico portfolio -->
+</head>
+<body>
+
+
+
+<header>
+    <div class="container flex-column">
+
+        <p class="logo">
+            <a href="home.html">
+                <img src="../img/logo_web.jpeg" alt="logo_web">
+            </a>
+        </p>
+        
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="pages.html">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        
+        <div class="header-login">
+            <!-- Aquí simulamos usuario no autenticado -->
+            <a href="login.html">Login</a>
+        </div>
+
+        <div class="search">
+            <a href="mailto:987frisk.agency@mail.com" class="btn">WORK WITH ME</a>
+        </div>
+       
+    </div>
+</header>
+
+
+
+
+<main>
+
+<!-- Hero -->
+<section class="hero">
+    <img src="../img/aboutme_alexmore.jpeg" alt="photo_computer">
+    <div class="container">
+        <h1>Portfolio</h1>
+    </div>
+</section>
+
+<!-- Cards -->
+<section class="cards">
+
+    <!-- Simulación de botón para agregar proyecto -->
+    <div class="add_new_project">
+        <a href="portfolio/portfolio_new.html" class="btn">Add new project</a>
+    </div>
+
+    <div class="container cards-2">
+
+        <!-- Simulación de proyectos -->
+        <div class="cards_portfolio">
+            <a href="portfolio/projects/portfolio_project.html">
+                <div class="card portfolio_img">
+                    <img src="../img/home_cards_1.jpeg" alt="project_image">
+                </div>
+                <h3>Project 1</h3>
+                <p>Description for project 1</p>
+            </a>
+        </div>
+
+        <div class="cards_portfolio">
+            <a href="portfolio/projects/portfolio_project.html">
+                <div class="card portfolio_img">
+                    <img src="../img/home_cards_2.jpeg" alt="project_image">
+                </div>
+                <h3>Project 2</h3>
+                <p>Description for project 2</p>
+            </a>
+        </div>
+
+        <div class="cards_portfolio">
+            <a href="portfolio/projects/portfolio_project.html">
+                <div class="card portfolio_img">
+                    <img src="../img/home_cards_1.jpeg" alt="project_image">
+                </div>
+                <h3>Project 3</h3>
+                <p>Description for project 3</p>
+            </a>
+        </div>
+
+        <div class="cards_portfolio">
+            <a href="portfolio/projects/portfolio_project.html">
+                <div class="card portfolio_img">
+                    <img src="../img/home_cards_1.jpeg" alt="project_image">
+                </div>
+                <h3>Project 4</h3>
+                <p>Description for project 4</p>
+            </a>
+        </div>
+
+        <!-- Mensaje si no hay proyectos -->
+        <!-- <p>there are no projects...</p> -->
+
+    </div>
+</section>
+
+</main>
+
+
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="container_left">
+            <h3>
+                Get valuable strategy, culture and brand insights straight to your inbox
+            </h3>
+
+            <h4>Contact</h4>
+            <address>
+                27 Division St, New York,<br>
+                NY 10002, Usa<br>
+                <br>
+                +1800123654987<br>
+                <a href="mailto:987frisk.agency@mail.com">987frisk.agency@mail.com</a>
+            </address>
+        </div>
+
+        <div class="container_right">
+            <h4>Links</h4>
+            <nav>
+                <a href="{{ url_for('pages.pages') }}">About</a>
+                <a href="{{ url_for('portfolio.portfolio') }}">Portfolio</a>
+                <a href="{{ url_for('pages.pages') }}">Services</a>
+                <a href="{{ url_for('blog.blog') }}">Testimonials</a>
+                <a href="{{ url_for('contact.contact') }}">Careers</a>
+            </nav>
+        </div> 
+
+    </div>
+
+    <small>
+        Copyright C 2026 - 
+        <a href="mailto:manelocana.dev@gmail.com">manelocana.dev@gmail.com</a>
+    </small>
+    
+</footer>
+
+
+
+
+
+</body>
+</html>

@@ -2,38 +2,59 @@
 
 
 
-{% extends 'index.html' %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-article - Frisk Agency</title>
 
-{% block content %}
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">       <!-- global -->
+    <link rel="stylesheet" href="../css/blog.css">  <!-- específico -->
+</head>
+
+
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<main>
 
 <section class="blog-article-page">
     <div class="blog-article-container flex-column flex-center">
-        <h1>{{ post.title }}</h1>
+        <h1>title post</h1>
 
-        {% if post.image %}
-            <img src="{{ url_for('static', filename='uploads/blog/' ~ post.image) }}" alt="post_image" class="blog_article_img;">
-        {% endif %}
+            <img src="../img/blog3.jpeg" alt="post_image">
 
-        <!-- pour sauter la securite html5 et voir le contenu correctement, sans les <p></p>  |safe  -->
-        <p>{{ post.content | safe }}</p>
+        <p>hsdhsjsfjsjsjsdh</p>
 
-        {% if current_user.is_authenticated %}
-            <div class="blog-article-actions">
-                <a href="{{ url_for('blog.blog_edit', post_id=post.id) }}" class="btn">Edit article</a>
 
-                <form method="POST" action="{{ url_for('blog.blog_delete', post_id=post.id) }}"
+            <!-- {% if current_user.is_authenticated %} -->
+
+            <!-- <div class="blog-article-actions">
+                <a href="blog/blog_edit.html" class="btn">Edit article</a>
+
+                <form method="POST" action="blog/blog_delete.html', post_id=post.id"
                       onsubmit="return confirm('Are you sure you want to delete this post?');">
                     <button class="btn btn-danger" type="submit">Delete article</button>
                 </form>
-            </div>
-        {% endif %}
+            </div>  -->
 
-        <a href="{{ url_for('blog.blog') }}" class="btn">Back</a>
+        <a href="blog.html" class="btn">Back</a>
     </div>
 </section>
 
-{% endblock %}
+</main>
+
+
+
+<!-- footer -->
+<div id="footer"></div>
+
+<script src="../js/script.js"></script>
+
+
+</body>
