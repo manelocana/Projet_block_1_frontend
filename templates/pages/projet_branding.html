@@ -6,11 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio-static - Frisk Agency</title>
+    <title>project-branding-static - Frisk Agency</title>
 
-    <!-- CSS principal -->
-    <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/portfolio.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
 </head>
 
@@ -20,8 +18,41 @@
 
 <body>
 
-<section class="hero">
-    <div>
+
+<header>
+    <div class="container flex-column">
+
+        <p class="logo">
+            <a href="home.html">
+                <img src="../../img/logo_web.jpeg" alt="logo_web">
+            </a>
+        </p>
+        
+        <nav>
+            <a href="../home.html">HOME</a>
+            <a href="../pages.html">ABOUT</a>
+            <a href="../portfolio.html">PORTFOLIO</a>
+            <a href="../blog.html">BLOG</a>
+            <a href="../contact.html">CONTACT</a>
+        </nav>
+        
+        <div class="header-login">
+            <!-- Aquí simulamos usuario no autenticado -->
+            <a href="../login.html">Login</a>
+        </div>
+
+        <div class="search">
+            <a href="mailto:987frisk.agency@mail.com" class="btn">WORK WITH ME</a>
+        </div>
+       
+    </div>
+</header>
+
+
+
+
+<section class="hero container">
+    <div class="container">
         <h1>Branding Design Services</h1>
         <p>We build powerful identities for modern brands.</p>
     </div>
@@ -36,11 +67,11 @@
 </section>
 
 <section class="container">
-    <div class="row">
+    <div class="row text-center">
 
         <div class="col-3">
             <div class="card">
-                <div class="feature-icon">🎨</div>
+                <div class="feature-icon"></div>
                 <h4>Logo Design</h4>
                 <p class="text-muted">Clean, memorable logo designs aligned with your brand values.</p>
             </div>
@@ -48,7 +79,7 @@
 
         <div class="col-3">
             <div class="card">
-                <div class="feature-icon">🖌️</div>
+                <div class="feature-icon"></div>
                 <h4>Visual Identity</h4>
                 <p class="text-muted">Colors, typography, shapes and a full branding system.</p>
             </div>
@@ -56,7 +87,7 @@
 
         <div class="col-3">
             <div class="card">
-                <div class="feature-icon">📦</div>
+                <div class="feature-icon"></div>
                 <h4>Brand Guidelines</h4>
                 <p class="text-muted">A professional, downloadable PDF guide for your brand usage.</p>
             </div>
@@ -69,21 +100,21 @@
     <h2 class="text-center">Recent Projects</h2>
 
     <div class="portfolio-grid">
-        <div class="portfolio-item">
+        <div class="portfolio-item container">
             <a href="portfolio_project_1.html">
-                <img src="../img/photo_ordi.jpg" class="portfolio-img">
+                <img src="../../img/paisage1.jpeg" class="portfolio-img">
             </a>
         </div>
 
         <div class="portfolio-item">
             <a href="portfolio_project_1.html">
-                <img src="../img/photo_ordi.jpg" class="portfolio-img">
+                <img src="../../img/animals_fox.jpg" class="portfolio-img">
             </a>
         </div>
 
         <div class="portfolio-item">
             <a href="portfolio_project_1.html">
-                <img src="../img/photo_ordi.jpg" class="portfolio-img">
+                <img src="../../img/animals_lion.jpeg" class="portfolio-img">
             </a>
         </div>
     </div>
@@ -122,11 +153,10 @@
         <div class="container_right">
             <h4>Links</h4>
             <nav>
-                <a href="{{ url_for('pages.pages') }}">About</a>
-                <a href="{{ url_for('portfolio.portfolio') }}">Portfolio</a>
-                <a href="{{ url_for('pages.pages') }}">Services</a>
-                <a href="{{ url_for('blog.blog') }}">Testimonials</a>
-                <a href="{{ url_for('contact.contact') }}">Careers</a>
+                <a href="../pages.html">About</a>
+                <a href="../portfolio.html">Portfolio</a>
+                <a href="../blog.html">Testimonials</a>
+                <a href="../contact.html">Careers</a>
             </nav>
         </div> 
 
