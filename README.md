@@ -31,24 +31,24 @@ Aucun traitement côté serveur n’a lieu
 
 Exemple de structure de projet :
 
-project-root/
-│
-├── index.html
-├── templates/
-│   ├── pages.html
-│   ├── portfolio.html
-│   ├── blog.html
-│   └── contact.html
-│
-├── css/
-│   ├── style.css
-│   └── home.css
-│
-├── js/
-│   └── script.js
-│
-└── img/
-    └── images...
+    project-root/
+    │
+    ├── index.html
+    ├── templates/
+    │   ├── pages.html
+    │   ├── portfolio.html
+    │   ├── blog.html
+    │   └── contact.html
+    │
+    ├── css/
+    │   ├── style.css
+    │   └── home.css
+    │
+    ├── js/
+    │   └── script.js
+    │
+    └── img/
+        └── images...
 
 Le dossier racine contient le point d’entrée principal du site :
 
@@ -66,36 +66,45 @@ Comme le site est statique, la navigation entre les pages se fait via des liens 
 
 Exemple :
 
-<a href="templates/pages.html">À PROPOS</a>
+    <a href="templates/pages.html">À PROPOS</a>
 
 Lorsque l’utilisateur clique sur ce lien, le navigateur demande le fichier HTML correspondant au serveur.
 
 Ce type de navigation s’appelle le routage basé sur les fichiers.
 
-Chemins relatifs
+## Chemins relatifs
 
 Les sites statiques utilisent des chemins relatifs pour référencer :
 
-les fichiers CSS
+- les fichiers CSS
 
-les images
+- les images
 
-les scripts JavaScript
+- les scripts JavaScript
 
-d’autres fichiers HTML
+- d’autres fichiers HTML
 
 Exemples :
 
 CSS
-<link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
 Image
-<img src="img/logo.png">
+
+    <img src="img/logo.png">
+    
 Navigation
-<a href="templates/blog.html">Blog</a>
+
+    <a href="templates/blog.html">Blog</a>
 
 Les chemins relatifs sont résolus par rapport à la localisation du fichier courant.
 
-Navigation vers le dossier parent
+
+---
+
+
+## Navigation vers le dossier parent
 
 Si un fichier est dans un sous-dossier et doit accéder à un fichier dans le dossier parent, on utilise ../.
 
@@ -103,94 +112,96 @@ Exemple :
 
 Si une page est située à :
 
-templates/pages.html
+    templates/pages.html
 
 Pour revenir à la page d’accueil :
 
-<a href="../index.html">ACCUEIL</a>
+    <a href="../index.html">ACCUEIL</a>
 
 ../ signifie :
 
-« remonter d’un niveau de dossier »
+    « remonter d’un niveau de dossier »
 
 Pour remonter plusieurs niveaux :
 
-../../
-Organisation des ressources
+    ../../
+
+---
+
+
+## Organisation des ressources
 
 Les ressources (CSS, JS, images) doivent être dans des dossiers dédiés.
 
 Structure typique :
 
-css/
-js/
-img/
-fonts/
+- css/
+- js/
+- img/
+- fonts/
 
 Exemples d’utilisation :
 
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js"></script>
-<img src="img/photo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <img src="img/photo.jpg">
 
 Cette organisation améliore la maintenabilité et l’évolutivité du projet.
 
-Caractéristiques d’un frontend statique
-Avantages
+---
 
-Architecture simple
 
-Chargement rapide
+## Caractéristiques d’un frontend statique
+### Avantages
 
-Déploiement facile
+- Architecture simple
 
-Aucun serveur nécessaire
+- Chargement rapide
 
-Compatible avec des services d’hébergement statique
+- Déploiement facile
 
-Limitations
+- Aucun serveur nécessaire
 
-Pas de logique côté serveur
+- Compatible avec des services d’hébergement statique
 
-Pas d’accès à une base de données
+### Limitations
 
-Pas de rendu dynamique des templates
+- Pas de logique côté serveur
 
-Les en-têtes et pieds de page doivent être dupliqués manuellement
+- Pas d’accès à une base de données
 
-Déploiement
+- Pas de rendu dynamique des templates
+
+- Les en-têtes et pieds de page doivent être dupliqués manuellement
+
+  ---
+  
+
+## Déploiement
 
 Étant donné que le site est entièrement statique, le déploiement consiste simplement à uploader les fichiers sur l’hébergement.
 
 Le serveur servira :
 
-HTML
-CSS
-JS
-images
+- HTML
+- CSS
+- JS
+- images
 
 Aucun environnement d’exécution n’est nécessaire.
 
-Résumé
+
+---
+
+
+## Résumé
 
 Ce projet suit une architecture frontend statique où :
 
-Chaque page est un fichier HTML autonome
+- Chaque page est un fichier HTML autonome
 
-La navigation se fait via <a href="">
+ -La navigation se fait via <a href="">
 
-Les chemins sont gérés avec le routage relatif
+- Les chemins sont gérés avec le routage relatif
 
-Les ressources sont organisées dans des dossiers dédiés
-
-Cette approche est idéale pour :
-
-portfolios
-
-pages de présentation
-
-sites de documentation
-
-sites marketing simples
-
-prototypes frontend
+- Les ressources sont organisées dans des dossiers dédiés
