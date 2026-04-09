@@ -408,7 +408,7 @@ header a {
 .scroll_container img {
     padding: 5px;
     width: 250px;
-    height: 250px;
+    height: 100%;
 }
 
 #img_scroll h2 {
@@ -528,7 +528,7 @@ header a {
 
     .scroll_container img {
         width: 300px;
-        height: 250px;
+        height: 100%;
     }
 
     #cards_articles .container {
@@ -727,27 +727,18 @@ header a {
 
 
 
-
-
     .scroll_container img {
         padding: 20px;
         width: 400px;
-        height: 300px;
+        height: 100%;
         border-radius: 50px;
     }    
-
-
-
 
 
     .events .container hr {
         width: 60%;
     }
     
-
-
-
-
 
 
     #lets_create .container {
@@ -757,8 +748,6 @@ header a {
     #lets_create .container p {
         padding: 40px;
     }
-
-
 
 
 
