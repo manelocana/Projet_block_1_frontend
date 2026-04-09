@@ -196,7 +196,10 @@ Aucun environnement d’exécution n’est nécessaire.
 
 ## Images
 
-Les images sont en format webp
+Les images sont en format webp, pour ameillorer la performance sur la web.
+
+
+---
 
 
 ## Résumé
