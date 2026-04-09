@@ -22,6 +22,7 @@
 
 #map_container iframe {
     width: 100%;
+    height: auto;
 }
 
 .form_container {

@@ -194,6 +194,11 @@ Aucun environnement d’exécution n’est nécessaire.
 ---
 
 
+## Images
+
+Les images sont en format webp
+
+
 ## Résumé
 
 Ce projet suit une architecture frontend statique où :
