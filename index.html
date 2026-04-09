@@ -4,9 +4,11 @@
 <html lang="en">
 
 <head>
+    <!-- metadonnées pour google -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="index - home, du web">
+
     <title>Home - Frisk Agency</title>
 
     <!-- CSS principal -->
@@ -18,7 +20,6 @@
 <body>
 
 
-
 <header>
     <div class="container flex-column">
 
@@ -28,6 +29,7 @@
             </a>
         </p>
         
+        <!-- barre navigation -->
         <nav>
             <a href="index.html">HOME</a>
             <a href="templates/pages.html">ABOUT</a>
@@ -37,11 +39,12 @@
         </nav>
         
         <div class="header-login">
-            <!-- Aquí simulamos usuario no autenticado -->
+            <!-- login faux, y a pas backend -->
             <a href="templates/login.html">Login</a>
         </div>
 
         <div class="search">
+            <!-- mailto ouvre la app de email -->
             <a href="mailto:987frisk.agency@mail.com" class="btn">WORK WITH ME</a>
         </div>
        
@@ -49,10 +52,9 @@
 </header>
 
 
-
 <main>
 
-<!-- Hero -->
+<!-- Hero - image principal -->
 <section class="hero-home">
     <img src="img/home_hero_camera.jpeg" alt="camera_home">
     
@@ -66,6 +68,7 @@
 <!-- Banner -->
 <section class="banner">
     <div class="container">
+        <h2>Address</h2>
         <address>
             27 Division St, New York,<br>NY 10002, USA<br>
             +1800 123 654<br><br>
@@ -162,6 +165,7 @@
 <section class="cards">
     <h2>Read Our Articles and News</h2>
     <div class="container cards-3">
+        <!-- on lance les images del fond de la card, avec css directement comme background-img -->
         <div class="card" style="background-image: url('img/blog1.jpeg');">
             <h3>Title Post 1</h3>
             <a href="templates/blog.html" class="btn">READ MORE</a>
@@ -188,13 +192,7 @@
 
 </main>
 
-
-
-
-
-
-
-
+<!-- footer - pie de page -->
 <footer id="footer">
     <div class="container">
         <div class="container_left">
@@ -230,11 +228,6 @@
     </small>
     
 </footer>
-
-
-
-
-
 
 </body>
 </html>
