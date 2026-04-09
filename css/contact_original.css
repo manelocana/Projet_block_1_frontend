@@ -76,8 +76,8 @@ form textarea {
     }
 
     #map_container iframe {
-        width: 600px;
-        height: 600px;
+        width: 400px;
+        height: 400px;
     }
 
     #map_container h2 {
