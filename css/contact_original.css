@@ -1,7 +1,7 @@
 
 
 
-#cards h2 {
+#cards-contact h2 {
     display: none;
     text-align: center;
     color: aliceblue;
@@ -59,7 +59,7 @@ form textarea {
         background-image: linear-gradient(
             rgb(0,0,0,0.1),
             rgb(0,0,0,1)
-            ) ,url("../img/devs_hablando.jpeg");
+            ) ,url("../img/devs_hablando.webp");
     }
 
 
